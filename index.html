@@ -21,12 +21,6 @@ header{
 
 header h1{
   font-size:3rem;
-  font-weight:700;
-}
-
-header p{
-  margin-top:10px;
-  opacity:0.9;
 }
 
 .container{
@@ -43,7 +37,6 @@ header p{
 
 .card{
   background:rgba(255,255,255,0.95);
-  backdrop-filter: blur(10px);
   padding:20px;
   border-radius:20px;
   margin-bottom:25px;
@@ -52,7 +45,7 @@ header p{
 }
 
 .card:hover{
-  transform:translateY(-8px) scale(1.01);
+  transform:translateY(-8px);
 }
 
 .grid{
@@ -67,31 +60,12 @@ header p{
 img,video{
   width:100%;
   border-radius:12px;
-  transition:0.3s;
-}
-
-img:hover, video:hover{
-  transform:scale(1.05);
-}
-
-.contact{
-  text-align:center;
-  font-weight:500;
-}
-
-.contact p{
-  margin:8px 0;
 }
 
 footer{
   text-align:center;
   padding:20px;
   color:white;
-  opacity:0.8;
-}
-
-@media(max-width:600px){
-  header h1{font-size:2.2rem}
 }
 </style>
 </head>
@@ -100,14 +74,24 @@ footer{
 
 <header>
 <h1>Utsab Pandey</h1>
-<p>Mechanical Engineering Student • 4.0 GPA • Texas State University</p>
+<p>Mechanical Engineering Honors Student | AFM Researcher | 4.0 GPA</p>
 </header>
 
 <div class="container">
 
+<h2 class="section-title">Pyrolysis Reactor Design</h2>
+<div class="card">
+<p>Designed and assembled a high-temperature pyrolysis reactor using CAD. Selected materials for thermal resistance (~1000°C) and performed assembly-level design validation.</p>
+<div class="grid grid-3">
+<img src="pyro1.jpg">
+<img src="pyroinner.jpg">
+<img src="pyrolid.jpg">
+</div>
+</div>
+
 <h2 class="section-title">ATM Accessibility Device</h2>
 <div class="card">
-<p>Designed a mechanical linkage system for disabled users using spring actuation and structural optimization.</p>
+<p>Mechanical linkage system designed for accessibility using springs and structural design.</p>
 <div class="grid grid-3">
 <img src="atm1.jpg.jpg">
 <img src="atm2.jpg.jpg">
@@ -117,7 +101,7 @@ footer{
 
 <h2 class="section-title">Fusion Splicing</h2>
 <div class="card">
-<p>Performed precision optical fiber splicing with nanoscale alignment and low-loss optimization.</p>
+<p>Precision fiber alignment and splicing for nanoscale sensing systems.</p>
 <div class="grid grid-2">
 <img src="fusion1.jpg.jpg">
 <img src="fusion2.jpg.jpg">
@@ -126,16 +110,26 @@ footer{
 
 <h2 class="section-title">Sparki Robot + Egg Mechanism</h2>
 <div class="card">
-<p>Engineered a passive geometry-based mechanism integrated with Arduino and sensors.</p>
+<p>Designed geometry-based mechanism integrated with Arduino and sensors.</p>
 <div class="grid grid-2">
 <img src="sparki1.jpg.jpg">
 <img src="sparki2.jpg.jpg">
 </div>
 </div>
 
+<h2 class="section-title">Research Work</h2>
+<div class="card">
+<p>Undergraduate research in AFM systems including fiber fabrication, nanoscale coating, and parametric sensing experiments.</p>
+<div class="grid grid-3">
+<img src="lab1.jpg">
+<img src="lab2.jpg">
+<img src="lab3.jpg">
+</div>
+</div>
+
 <h2 class="section-title">Research Presentation</h2>
 <div class="card">
-<p>Presented AFM-based sensing research at TXST STEM conference.</p>
+<p>Presented AFM sensing research at TXST STEM conference.</p>
 <div class="grid grid-2">
 <img src="poster1.jpg.jpg">
 <img src="poster2.jpg.jpg">
@@ -144,13 +138,22 @@ footer{
 
 <h2 class="section-title">Project Videos</h2>
 <div class="card">
-<video controls><source src="vid1.mp4.mp4"></video><br><br>
-<video controls><source src="vid2.mp4.mp4"></video><br><br>
-<video controls><source src="vid3.mp4.mp4"></video>
+<video controls src="vid1.mp4.mp4"></video><br><br>
+<video controls src="vid2.mp4.mp4"></video><br><br>
+<video controls src="vid3.mp4.mp4"></video><br><br>
+<video controls src="lab5.mp4"></video>
+</div>
+
+<h2 class="section-title">Skills</h2>
+<div class="card">
+<p><strong>CAD:</strong> SolidWorks, AutoCAD, Fusion 360</p>
+<p><strong>Programming:</strong> MATLAB, Python, Arduino</p>
+<p><strong>Fabrication:</strong> CNC, Welding, 3D Printing</p>
+<p><strong>Research:</strong> AFM, Thin Film Deposition, Nanoscale Measurement</p>
 </div>
 
 <h2 class="section-title">Contact</h2>
-<div class="card contact">
+<div class="card">
 <p>📞 737-213-0049</p>
 <p>📧 pandeyutsab554@gmail.com</p>
 <p>🔗 linkedin.com/in/utsab-pandey-500515246</p>
