@@ -17,86 +17,90 @@ body{
 /* HEADER */
 header{
   text-align:center;
-  padding:80px 20px;
+  padding:60px 20px;
   background:linear-gradient(135deg,#1e3a8a,#2563eb);
 }
-header h1{font-size:3rem;}
-header p{margin-top:10px;opacity:0.9;font-size:1.1rem;}
+
+header img{
+  width:140px;
+  height:140px;
+  border-radius:50%;
+  object-fit:cover;
+  margin-bottom:15px;
+  border:4px solid white;
+}
+
+header h1{
+  font-size:2.8rem;
+}
+
+header p{
+  margin-top:10px;
+  opacity:0.9;
+}
 
 .btn{
   display:inline-block;
-  margin-top:25px;
-  padding:12px 26px;
+  margin-top:15px;
+  padding:10px 18px;
   background:#22c55e;
   color:white;
   text-decoration:none;
   border-radius:8px;
   font-weight:600;
 }
-.btn:hover{background:#16a34a}
 
-/* CONTAINER */
-.container{max-width:1100px;margin:auto;padding:20px}
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:20px;
+}
 
-/* TITLES */
 .section-title{
   font-size:1.8rem;
-  margin:50px 0 15px;
-  border-left:4px solid #22c55e;
-  padding-left:10px;
+  margin:40px 0 10px;
+  color:#60a5fa;
 }
 
-/* CARD */
 .card{
   background:#1e293b;
-  padding:22px;
+  padding:20px;
   border-radius:14px;
   margin-bottom:25px;
-  box-shadow:0 8px 20px rgba(0,0,0,0.4);
+  box-shadow:0 6px 20px rgba(0,0,0,0.4);
 }
 
-/* GRID */
-.grid{display:grid;gap:12px;margin-top:15px}
-.grid-3{grid-template-columns: repeat(auto-fit,minmax(150px,1fr));}
+.grid{
+  display:grid;
+  gap:12px;
+  margin-top:15px;
+}
 
-/* MEDIA */
+.grid-3{grid-template-columns: repeat(auto-fit,minmax(140px,1fr));}
+.grid-2{grid-template-columns: repeat(auto-fit,minmax(200px,1fr));}
+
 img{
   width:100%;
-  height:200px;
+  border-radius:10px;
+}
+
+/* VIDEO FIX */
+video{
+  width:100%;
+  max-height:400px;
   object-fit:cover;
   border-radius:10px;
 }
-video{
-  width:100%;
-  max-height:350px;
-  border-radius:10px;
-  margin-top:10px;
+
+a{
+  color:#38bdf8;
+  text-decoration:none;
 }
 
-/* BULLETS */
-ul{
-  margin-top:10px;
-  padding-left:20px;
-}
-li{
-  margin-bottom:6px;
-  font-size:0.95rem;
+.contact{
+  text-align:center;
 }
 
-/* SKILLS */
-.skills span{
-  display:inline-block;
-  background:#334155;
-  padding:6px 12px;
-  margin:5px;
-  border-radius:8px;
-  font-size:0.85rem;
-}
-
-/* CONTACT */
-.contact{text-align:center}
-
-/* FOOTER */
 footer{
   text-align:center;
   padding:20px;
@@ -108,12 +112,12 @@ footer{
 <body>
 
 <header>
+<img src="head.png">
 <h1>Utsab Pandey</h1>
-<p>Mechanical Engineering Student @ Texas State (4.0 GPA) — Building real systems in CAD, fabrication, and nanoscale research</p>
+<p>Mechanical Engineering Honors Student • 4.0 GPA • Texas State University</p>
+<p>Undergraduate Researcher (NSF/NIH/USDA Funded) • Autodesk Ambassador</p>
 
-<a href="Utsab_Pandey_Resume.pdf" class="btn" download>
-⬇ Download Resume
-</a>
+<a href="Utsab_Pandey_Resume.pdf" class="btn" download>Download Resume</a>
 </header>
 
 <div class="container">
@@ -122,31 +126,17 @@ footer{
 <h2 class="section-title">About</h2>
 <div class="card">
 <p>
-Mechanical Engineering Honors student with hands-on experience in CAD design, fabrication, and experimental research. 
-Focused on solving real-world engineering problems across robotics, thermal systems, and nanoscale sensing. 
-Seeking Summer 2026 internships in mechanical, manufacturing, or product engineering.
+Mechanical Engineering student with a 4.0 GPA at Texas State University, specializing in CAD design, robotics, and nanoscale research. 
+Currently working on AFM-based sensing systems funded by NSF/NIH/USDA, focusing on signal amplification and noise reduction. 
+Passionate about aerospace, automotive systems, and high-performance mechanical design.
 </p>
 </div>
 
-<!-- SKILLS -->
-<h2 class="section-title">Technical Skills</h2>
-<div class="card skills">
-<span>SolidWorks</span><span>AutoCAD</span><span>Fusion 360</span>
-<span>MATLAB</span><span>Python</span><span>Arduino</span>
-<span>CNC</span><span>3D Printing</span><span>Welding</span>
-<span>AFM</span><span>Oscilloscope</span><span>Vibration Analysis</span>
-</div>
-
 <!-- PROJECTS -->
-<h2 class="section-title">Engineering Projects</h2>
 
+<h2 class="section-title">Pyrolysis Reactor Design</h2>
 <div class="card">
-<h3>Pyrolysis Reactor Design</h3>
-<ul>
-<li>Designed full reactor geometry in SolidWorks for high-temperature (~1000°C) operation</li>
-<li>Applied heat transfer and fluid flow principles to optimize thermal distribution</li>
-<li>Selected materials for insulation and pressure containment under extreme conditions</li>
-</ul>
+<p>Designed high-temperature reactor (1000°C) with material selection, thermal analysis, and full CAD assembly.</p>
 <div class="grid grid-3">
 <img src="pyro1.png">
 <img src="pyroinner.png">
@@ -154,13 +144,9 @@ Seeking Summer 2026 internships in mechanical, manufacturing, or product enginee
 </div>
 </div>
 
+<h2 class="section-title">ATM Accessibility Device</h2>
 <div class="card">
-<h3>ATM Accessibility Device</h3>
-<ul>
-<li>Designed linkage-based mechanical system improving accessibility for disabled users</li>
-<li>Iterated CAD models and validated physical prototype via 3D printing</li>
-<li>Tested mechanism performance against usability constraints</li>
-</ul>
+<p>Mechanical linkage system enabling accessible ATM interaction.</p>
 <div class="grid grid-3">
 <img src="atm1.jpg.jpg">
 <img src="atm2.jpg.jpg">
@@ -168,50 +154,70 @@ Seeking Summer 2026 internships in mechanical, manufacturing, or product enginee
 </div>
 </div>
 
+<h2 class="section-title">Fusion Splicing</h2>
 <div class="card">
-<h3>Sparki Robot + Egg Mechanism</h3>
-<ul>
-<li>Developed passive geometry-based mechanism to reorient objects without active control</li>
-<li>Integrated Arduino sensors and robotic system for interaction</li>
-<li>Demonstrated constraint-based mechanical design principles</li>
-</ul>
-<div class="grid grid-3">
+<p>Precision fiber alignment and nanoscale optical work.</p>
+<div class="grid grid-2">
+<img src="fusion1.jpg.jpg">
+<img src="fusion2.jpg.jpg">
+</div>
+</div>
+
+<h2 class="section-title">Sparki Robot + Egg Mechanism</h2>
+<div class="card">
+<p>Geometry-based mechanism with Arduino integration.</p>
+<div class="grid grid-2">
 <img src="sparki1.jpg.jpg">
 <img src="sparki2.jpg.jpg">
 <img src="egg1.png">
 </div>
 </div>
 
-<!-- RESEARCH -->
-<h2 class="section-title">Research Experience</h2>
+<h2 class="section-title">AFM Research</h2>
 <div class="card">
-<ul>
-<li>Engineered Ag-coated optical fiber electrodes for AFM cantilever actuation</li>
-<li>Developed epoxy masking process for selective thin-film deposition</li>
-<li>Explored electrostatic coupling and parametric resonance for signal amplification</li>
-</ul>
-<div class="grid grid-3">
+<p>Undergraduate Research — AFM Parametric Sensing (NSF/NIH/USDA funded).</p>
+<div class="grid grid-2">
 <img src="lab1.jpg">
 <img src="lab2.jpg">
 <img src="lab3.jpg">
+<img src="l1.png">
+<img src="l2.png">
+<img src="l3.png">
+<img src="l4.png">
 </div>
-<video controls><source src="lab5.mp4"></video>
 </div>
 
 <!-- VIDEOS -->
+
 <h2 class="section-title">Project Videos</h2>
 <div class="card">
-<video controls><source src="vid1.mp4.mp4"></video>
-<video controls><source src="vid2.mp4.mp4"></video>
-<video controls><source src="vid3.mp4.mp4"></video>
+<video controls src="vid1.mp4"></video><br><br>
+<video controls src="vid2.mp4"></video><br><br>
+<video controls src="vid3.mp4"></video><br><br>
+<video controls src="lab5.mp4"></video>
+</div>
+
+<!-- CERTIFICATIONS -->
+
+<h2 class="section-title">Certifications & Awards</h2>
+<div class="card">
+<ul>
+<li>Autodesk Design & Make Ambassador</li>
+<li>AutoCAD Certified</li>
+<li>MATLAB Certified</li>
+<li>President’s Honor Scholarship ($48,000)</li>
+<li>President’s List (Fall & Spring 2025)</li>
+<li>NSF/NIH/USDA Funded Researcher</li>
+</ul>
 </div>
 
 <!-- CONTACT -->
+
 <h2 class="section-title">Contact</h2>
 <div class="card contact">
 <p>📞 737-213-0049</p>
 <p>📧 pandeyutsab554@gmail.com</p>
-<p>🔗 linkedin.com/in/utsab-pandey-500515246</p>
+<p>🔗 <a href="https://linkedin.com/in/utsab-pandey-500515246" target="_blank">LinkedIn Profile</a></p>
 </div>
 
 </div>
